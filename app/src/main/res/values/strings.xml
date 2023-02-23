@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="first_menu">Epsi</string>
+
+    <string name="app_name">projetAndroidB3</string>
+    <string name="btn_text_info">Info</string>
+    <string name="btn_text_produits">Produits</string>
+
+
+    <string name="title_info">Info</string>
+    <string name="title_produits">Produits</string>
+
 </resources>
