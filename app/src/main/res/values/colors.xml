@@ -3,6 +3,8 @@
     <color name="teal_simple">#70F8DD </color>
     <color name="red_simple">#F8708B</color>
     <color name="text_simple">#8F8B7E</color>
+    <color name="teal_variant">#387C6E</color>
+    <color name="red_variant">#7C3846</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
