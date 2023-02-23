@@ -20,17 +20,20 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="311dp"
-        android:layout_height="417dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
+        android:layout_width="16sp"
+        android:layout_height="16sp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="32dp"
         android:background="@color/white"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:contextClickable="true"
+
+        android:isScrollContainer="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
 
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/categories_header"
         app:layout_constraintVertical_bias="0.5"
