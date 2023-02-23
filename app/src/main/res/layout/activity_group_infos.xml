@@ -22,23 +22,20 @@
         <Button
             android:id="@+id/buttonInfo"
             style="@style/EpsiButton"
-            android:text="@string/btn_text_info"
             android:backgroundTint="@color/teal_variant"
-            />
+            android:text="@string/placeholder" />
 
         <Button
             android:id="@+id/buttonInfo"
             style="@style/EpsiButton"
-            android:text="@string/btn_text_info"
             android:backgroundTint="@color/teal_variant"
-            />
+            android:text="@string/placeholder" />
 
         <Button
             android:id="@+id/buttonProduits"
             style="@style/EpsiButton"
-            android:text="@string/btn_text_produits"
             android:backgroundTint="@color/teal_variant"
-            />
+            android:text="@string/placeholder" />
 
     </LinearLayout>
 
