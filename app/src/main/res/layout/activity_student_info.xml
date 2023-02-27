@@ -27,6 +27,7 @@
         app:srcCompat="@drawable/placeholder" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewStudentInfo"
         android:layout_width="280dp"
         android:layout_height="252dp"
         android:layout_marginStart="58dp"

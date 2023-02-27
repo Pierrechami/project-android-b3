@@ -6,36 +6,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context=".GroupInfosActivity">
     <include
         layout="@layout/layout_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <LinearLayout
+        android:id="@+id/layoutGroupInfos"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/teal_simple"
         android:gravity="center"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/buttonInfo"
-            style="@style/EpsiButton"
-            android:backgroundTint="@color/teal_variant"
-            android:text="@string/placeholder" />
-
-        <Button
-            android:id="@+id/buttonInfo"
-            style="@style/EpsiButton"
-            android:backgroundTint="@color/teal_variant"
-            android:text="@string/placeholder" />
-
-        <Button
-            android:id="@+id/buttonProduits"
-            style="@style/EpsiButton"
-            android:backgroundTint="@color/teal_variant"
-            android:text="@string/placeholder" />
 
     </LinearLayout>
 
