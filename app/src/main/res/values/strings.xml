@@ -14,30 +14,32 @@
     <string name="placeholder">placeholder</string>
     <string name="products_list_title"></string>
 
-    <string name="students_object">
-    [
-        {
-            "firstName": "Julien",
-            "lastName": "Flusin",
-            "email": "julien.flusin@epsi.fr",
-            "avatar": "https://avatars.githubusercontent.com/u/50296610?v=4",
-            "group": "https://github.com/Pierrechami/Android-project.git"
-        },
-        {
-            "firstName": "Pierre",
-            "lastName": "Chaminade",
-            "email": "pierre.chaminade@epsi.fr",
-            "avatar": "https://avatars.githubusercontent.com/u/80400025?v=4",
-            "group": "https://github.com/Pierrechami/Android-project.git"
-        },
-        {
-            "firstName": "Quentin",
-            "lastName": "Launay",
-            "email": "quentin.launay@epsi.fr",
-            "avatar": "https://avatars.githubusercontent.com/u/50755766?v=4",
-            "group": "https://github.com/Pierrechami/Android-project.git"
-        }
-    ]
+    <string name="students_json_object">
+    {
+        "students": [
+            {
+                "firstName": "Julien",
+                "lastName": "Flusin",
+                "email": "julien.flusin@epsi.fr",
+                "avatar": "https://avatars.githubusercontent.com/u/50296610?v=4",
+                "group": "https://github.com/Pierrechami/Android-project.git"
+            },
+            {
+                "firstName": "Pierre",
+                "lastName": "Chaminade",
+                "email": "pierre.chaminade@epsi.fr",
+                "avatar": "https://avatars.githubusercontent.com/u/80400025?v=4",
+                "group": "https://github.com/Pierrechami/Android-project.git"
+            },
+            {
+                "firstName": "Quentin",
+                "lastName": "Launay",
+                "email": "quentin.launay@epsi.fr",
+                "avatar": "https://avatars.githubusercontent.com/u/50755766?v=4",
+                "group": "https://github.com/Pierrechami/Android-project.git"
+            }
+        ]
+    }
     </string>
 
 </resources>
