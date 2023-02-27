@@ -9,7 +9,6 @@ class HomeActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-
         setHeaderTitle(getString(R.string.first_menu))
 
         val buttonLogin = findViewById<Button>(R.id.buttonInfo)

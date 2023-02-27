@@ -11,16 +11,6 @@
         android:layout_height="60dp"
         android:background="@color/red_simple">
 
-        <TextView
-            android:id="@+id/main_header"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:gravity="center"
-            android:text="Title"
-            android:textColor="@color/text_simple"
-            android:textSize="32sp"
-            android:textStyle="bold" />
-
         <ImageView
             android:id="@+id/imageViewBack"
             android:layout_width="60dp"
@@ -28,6 +18,16 @@
             android:layout_alignParentLeft="true"
             android:visibility="gone"
             app:srcCompat="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="Title"
+            android:textColor="@color/text_simple"
+            android:textSize="32sp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
 </LinearLayout>
