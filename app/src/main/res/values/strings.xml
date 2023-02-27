@@ -4,7 +4,7 @@
     <string name="app_name">projetAndroidB3</string>
     <string name="btn_text_info">Info</string>
     <string name="btn_text_produits">Produits</string>
-
+    <string name="student_img_content_description">Avatar de l\'étudiant </string>
 
     <string name="title_info">Info</string>
     <string name="title_produits">Produits</string>
