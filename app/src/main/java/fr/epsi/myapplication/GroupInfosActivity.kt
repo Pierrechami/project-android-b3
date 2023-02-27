@@ -1,5 +1,6 @@
 package fr.epsi.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.ContextThemeWrapper
 import android.widget.Button
@@ -61,6 +62,8 @@ class GroupInfosActivity : BaseActivity() {
                 //showToast("Button clicked")
                 //make the real code here
                 Toast.makeText( applicationContext,"Button clicked for student ${student.firstName}",Toast.LENGTH_SHORT).show()
+                val newIntent = Intent(application, StudentInfo::class.java)
+                startActivity(newIntent)
             }
 
             // Add button to the layout
