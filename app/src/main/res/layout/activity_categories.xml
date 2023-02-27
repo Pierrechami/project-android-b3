@@ -33,9 +33,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:itemCount="20"
-            tools:listitem="@layout/recycler_view_item" />
+            android:layout_height="match_parent" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
