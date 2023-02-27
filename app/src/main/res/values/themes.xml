@@ -20,7 +20,7 @@
         <item name="android:layout_height">150dp</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:textColor">@color/white</item>
-        <item name="android:backgroundTint">@color/teal_variant</item>
+        <item name="android:backgroundTint">@color/red_simple</item>
     </style>
 
     <style name="EditTextLogin" parent="Widget.AppCompat.EditText">

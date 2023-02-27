@@ -21,17 +21,17 @@
 
         <Button
             android:id="@+id/buttonInfo"
-            style="@style/EpsiButton"
-            android:text="@string/btn_text_info"
-            android:backgroundTint="@color/teal_variant"
-            />
+            android:theme="@style/EpsiButton"
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:text="@string/btn_text_info" />
 
         <Button
             android:id="@+id/buttonProduits"
-            style="@style/EpsiButton"
-            android:text="@string/btn_text_produits"
-            android:backgroundTint="@color/teal_variant"
-            />
+            android:theme="@style/EpsiButton"
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:text="@string/btn_text_produits" />
 
     </LinearLayout>
 
