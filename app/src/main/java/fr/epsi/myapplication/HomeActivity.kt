@@ -18,7 +18,7 @@ class HomeActivity : BaseActivity() {
         })
         val buttonSignup = findViewById<Button>(R.id.buttonProduits)
         buttonSignup.setOnClickListener(View.OnClickListener {
-            val newIntent = Intent(application, CategorieActivity::class.java)
+            val newIntent = Intent(application, CategoriesActivity::class.java)
             startActivity(newIntent)
         })
     }
