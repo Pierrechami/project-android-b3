@@ -11,8 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class GroupInfosActivity : BaseActivity() {
-    //val studentsJsonString: String = "${getString(R.string.students_json_object)}"
-    val studentsJsonString: String = "{\n" +
+    private val studentsJsonString: String = "{\n" +
             "\"students\": [\n" +
             "{\n" +
             "\"firstName\": \"Julien\",\n" +
@@ -56,25 +55,16 @@ class GroupInfosActivity : BaseActivity() {
                 js.optString("group", "not found"),
             )
             val button = Button(ContextThemeWrapper(this,R.style.EpsiButton))
-//            val button = Button(this)
             button.text = "${student.firstName} ${student.lastName}"
             button.setOnClickListener {
-                //showToast("Button clicked")
-                //make the real code here
-                Toast.makeText( applicationContext,"Button clicked for student ${student.firstName}",Toast.LENGTH_SHORT).show()
                 val newIntent = Intent(application, StudentInfo::class.java)
+                newIntent.putExtra("student", student)
                 startActivity(newIntent)
             }
 
-            // Add button to the layout
             val layout = findViewById<LinearLayout>(R.id.layoutGroupInfos)
             layout.addView(button)
             students.add(student)
         }
-
-        //val recyclerviewStudents=findViewById<RecyclerView>(R.id.recyclerviewStudentInfo)
-        //recyclerviewStudents.layoutManager= LinearLayoutManager(this)
-        //val studentAdapter=StudentAdapter(students)
-        //recyclerviewStudents.adapter=studentAdapter
     }
 }
