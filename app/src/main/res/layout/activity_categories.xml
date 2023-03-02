@@ -19,23 +19,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="829dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/categories_header">
+        app:layout_constraintTop_toBottomOf="@id/categories_header">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerviewCategories"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:listitem="@layout/recycler_view_item_categories"/>
+            tools:itemCount="15"
+            tools:listitem="@layout/recycler_view_item_categories" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

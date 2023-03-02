@@ -2,14 +2,13 @@ package fr.epsi.myapplication
 
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import com.squareup.picasso.Picasso
 
-class StudentInfo : BaseActivity() {
+class StudentInfoActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_student_info)
@@ -17,13 +16,13 @@ class StudentInfo : BaseActivity() {
         val student = intent.getSerializableExtra("student") as? Student
         setHeaderTitle("${student?.firstName} ${student?.lastName}")
 
-        val names = findViewById<TextView>(R.id.textView7)
+        val names = findViewById<TextView>(R.id.textViewNames)
         names.text = "${student?.lastName} ${student?.firstName}"
-        val email = findViewById<TextView>(R.id.textView8)
+        val email = findViewById<TextView>(R.id.textViewEmail)
         email.text = "${student?.email}"
-        val group = findViewById<TextView>(R.id.textView9)
+        val group = findViewById<TextView>(R.id.textViewGroup)
         group.text = "${student?.group}"
-        val avatar = findViewById<ImageView>(R.id.placeholder)
+        val avatar = findViewById<ImageView>(R.id.studentImage)
         Picasso.get().load(student?.avatar).into(avatar)
 
         val button = findViewById<Button>(R.id.urlEpsi)

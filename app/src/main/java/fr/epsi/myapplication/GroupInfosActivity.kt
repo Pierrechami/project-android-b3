@@ -5,10 +5,7 @@ import android.os.Bundle
 import android.view.ContextThemeWrapper
 import android.widget.Button
 import android.widget.LinearLayout
-import android.widget.Toast
 import org.json.JSONObject
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 
 class GroupInfosActivity : BaseActivity() {
     private val studentsJsonString: String = "{\n" +
@@ -57,7 +54,7 @@ class GroupInfosActivity : BaseActivity() {
             val button = Button(ContextThemeWrapper(this,R.style.EpsiButton))
             button.text = "${student.firstName} ${student.lastName}"
             button.setOnClickListener {
-                val newIntent = Intent(application, StudentInfo::class.java)
+                val newIntent = Intent(application, StudentInfoActivity::class.java)
                 newIntent.putExtra("student", student)
                 startActivity(newIntent)
             }

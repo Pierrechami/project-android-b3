@@ -9,10 +9,10 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
-class CategoriesAdapter (val categories: ArrayList<Category>):RecyclerView.Adapter<CategoriesAdapter.ViewHolder>() {
+class CategoriesAdapter (private val categories: ArrayList<Category>):RecyclerView.Adapter<CategoriesAdapter.ViewHolder>() {
     class ViewHolder(view:View) :RecyclerView.ViewHolder(view){
-        val textViewTitle = view.findViewById<TextView>(R.id.textViewTitle)
-        val layoutContent= view.findViewById<LinearLayout>(R.id.layoutContentCategoryItem)
+        val textViewTitle: TextView = view.findViewById(R.id.textViewTitle)
+        val layoutContent: LinearLayout = view.findViewById(R.id.layoutContentCategoryItem)
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
@@ -22,7 +22,7 @@ class CategoriesAdapter (val categories: ArrayList<Category>):RecyclerView.Adapt
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val category = categories.get(position)
+        val category = categories[position]
         holder.textViewTitle.text=category.title
         holder.layoutContent.setOnClickListener(View.OnClickListener {
             val newIntent = Intent(holder.layoutContent.context, ProductListActivity::class.java)

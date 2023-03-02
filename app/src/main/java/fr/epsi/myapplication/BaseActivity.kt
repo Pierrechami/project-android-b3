@@ -46,7 +46,7 @@ open class BaseActivity : AppCompatActivity(){
 
     fun setHeaderTitle(title: String?) {
         val textView = findViewById<TextView>(R.id.textViewTitle)
-        textView.setText(title)
+        textView.text = title
     }
 
     fun showBack() {
