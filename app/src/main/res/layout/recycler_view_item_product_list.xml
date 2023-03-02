@@ -4,12 +4,13 @@
               android:id="@+id/layoutContentCategoryItem"
               android:orientation="horizontal"
               android:padding="8dp"
+              android:background="@drawable/border"
               android:layout_width="match_parent"
               android:layout_height="wrap_content">
   <ImageView
       android:id="@+id/imageViewProduct"
-      android:layout_width="50dp"
-      android:layout_height="50dp"
+      android:layout_width="120dp"
+      android:layout_height="120dp"
       tools:src="@tools:sample/avatars"/>
 
   <LinearLayout
@@ -23,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:padding="5dp"
+        android:textSize="16sp"
         tools:text="@tools:sample/lorem" />
 
     <TextView
@@ -30,6 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
+        android:textSize="14sp"
         android:text="@tools:sample/lorem[1]" />
   </LinearLayout>
 

@@ -30,7 +30,9 @@ class ProductAdapter (private val products: ArrayList<Product>):RecyclerView.Ada
         holder.textViewProductDescription.text="Description: "+product.description
         Picasso.get().load(product.picture_url).into(holder.imageViewProduct)
         holder.layoutContent.setOnClickListener(View.OnClickListener {
-            Toast.makeText(holder.layoutContent.context,product.name,Toast.LENGTH_SHORT).show()
+            val intent = Intent(holder.layoutContent.context, ProductDetailsActivity::class.java)
+            intent.putExtra("product", product)
+            holder.layoutContent.context.startActivity(intent)
         })
     }
 
