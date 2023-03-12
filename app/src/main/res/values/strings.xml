@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="first_menu">Epsi</string>
+
+    <string name="app_name">App Mobile CFL</string>
+    <string name="btn_text_info">Info</string>
+    <string name="btn_text_produits">Produits</string>
+    <string name="student_img_content_description">Avatar de l\'étudiant </string>
+
+    <string name="title_info">Info</string>
+    <string name="title_produits">Produits</string>
+    <string name="home_title">Epsi</string>
+    <string name="group_infos_title">Infos</string>
+    <string name="categories_title">Rayons</string>
+    <string name="placeholder">placeholder</string>
+    <string name="products_list_title"></string>
+    <string name="epsi_link">https://www.epsi.fr/</string>
+    <string name="info_etudiant">Infos Etudiants</string>
+    <string name="description">Description : </string>
 </resources>

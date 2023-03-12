@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_simple"
+    tools:context=".StudentInfoActivity">
+
+    <include
+        android:id="@+id/student_info_header"
+        layout="@layout/layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/urlEpsi"
+        app:layout_constraintTop_toBottomOf="@+id/student_info_header">
+
+        <ImageView
+            android:id="@+id/studentImage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:contentDescription="@string/student_img_content_description"
+            app:srcCompat="@drawable/placeholder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewInfoEtudiant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="@string/info_etudiant" />
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Email"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Group"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textViewNames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Nom Prénom"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/urlEpsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="@color/red_variant"
+        android:clickable="true"
+        android:focusable="auto"
+        android:inputType="textUri"
+        android:linksClickable="true"
+        android:text="@string/epsi_link"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
